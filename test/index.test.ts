@@ -4,8 +4,11 @@
 import isUserDefinedComponent from "../dist/index.js";
 
 it("Will return false given anything but a string.", () => {
+    // @ts-expect-error
     expect(isUserDefinedComponent(4)).toBe(false);
+    // @ts-expect-error
     expect(isUserDefinedComponent({})).toBe(false);
+    // @ts-expect-error
     expect(isUserDefinedComponent(undefined)).toBe(false);
 });
 

@@ -6,6 +6,7 @@
   "files": [
     "dist/*"
   ],
+  "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc && jsmin --overwrite -l 3 dist/index.js",
